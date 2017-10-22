@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>Contato</title>
+<link rel="stylesheet" href="css/index.css" type="text/css"/>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+
+<div class = "container"></div>
+  <div class = "logo">
+    <img src="img/logo4.png" alt="Logo do Site" title="Logo do blog WebSite"/>
+  </div>
+  <div class = "menu">
+    <ul>
+      <li> <a href="index.html"> HOME </a> </li>
+      <li> <a href="modelos.html"> MODELOS </a> </li>
+      <li> <a href="contato.html"> CONTATO </a> </li>
+      <li> <a href="sobre.html"> SOBRE </a> </li>
+    </ul>
+  </div>
+  <div = id ="ondeencontrar">
+	<p>Onde nos encontrar?</p>
+	</div>
+	
+	<div id= "seta">
+	<img src="img/setabaixo.png" alt="Modelos de tenis" title="Modelos de tenis"/>
+	</div>
+	<body>
+<div id="googleMap"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(-23.530813,-46.7623617),
+    zoom:15,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbYMTu-Sj4QkfPDKHTTk6anpx5MZ35HFk&callback=myMap"></script>
+
+</body>
+    <div class = "conteudo">
+         <br/>
+	
+<form action="form.php" method="post"form name="meu_form">
+        <h1>Entre em contato</h1>
+        <p class="nome">
+            <input type="text" id="nomeid" placeholder="Fulano" required="required" name="nome" />
+            <label for="nome">Nome</label>
+        </p>
+        <p class="fone">
+            <input type="text" id="foneid" placeholder="(xx) xxxxx-xxxx" name="fone" />
+            <label for="fone">Fone</label>
+        </p>
+        <p>
+            <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+            <label for="email">Email</label>
+        </p>
+        <p>
+            <textarea placeholder="Deixe sua opinião"></textarea>
+        </p>
+        <p class="submit">
+            <input type="submit" onclick="Enviar();" value="Enviar" />
+        </p>
+	</form>
+
+
+
+</div>
+     <div class = "rodape">
+      <span> WebSite &copy 2017 - Todos os direitos reservados.</span><br/>
+      <a href="sobre.html">SOBRE </a> | <a href="contato.html">CONTATO </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="css/index.css" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class = "container"></div>
+  <div class = "logo">
+    <img src="img/logo4.png" alt="Logo do Site" title="Logo do blog WebSite"/>
+  </div>
+  <div class = "menu">
+    <ul>
+      <li> <a href="index.html"> HOME </a> </li>
+      <li> <a href="modelos.html"> MODELOS </a> </li>
+      <li> <a href="contato.html"> CONTATO </a> </li>
+      <li> <a href="sobre.html"> SOBRE </a> </li>
+    </ul>
+  </div>
+  <div class = "conteudo">
+    <br/>
+
+  <div class="Slides" style="max-width:500px">
+  <img class="mySlides" src="img/tenisshow.png" style="width:100%">
+  <img class="mySlides" src="img/tenisshow2.png" style="width:100%">
+  <img class="mySlides" src="img/tenisshow3.png" style="width:100%">
+  <img class="mySlides" src="img/tenisshow4.png" style="width:100%">
+  <img class="mySlides" src="img/tenisshow5.png" style="width:100%">
+  <img class="mySlides" src="img/tenisshow6.png" style="width:100%">
+  <img class="mySlides" src="img/tenisshow7.png" style="width:100%">
+  <img class="mySlides" src="img/tenisshow8.png" style="width:100%">
+  <img class="mySlides" src="img/tenisshow9.png" style="width:100%">
+  <img class="mySlides" src="img/tenisshow10.png" style="width:100%">
+  </div>
+  </div>
+
+  
+    <div class = "rodape">
+      <span> WebSite &copy 2017 - Todos os direitos reservados.</span><br/>
+      <a href="#">SOBRE </a> | <a href="#">CONTATO </a>
+    </div>
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
